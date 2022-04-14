@@ -1,6 +1,8 @@
 FROM python:3.7-alpine
 
-RUN mkdir /honeypot
+RUN useradd -s /bin/bash honeypot
+
+RUN mkdir /honeypot && chown -fR honeypot:honeypot /honeypot
 WORKDIR /honeypot
 
 USER honeypot
