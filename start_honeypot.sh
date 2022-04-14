@@ -1,2 +1,2 @@
 #!/bin/bash
-python /code/init_honeypot.py
+python /honeypot/init_honeypot.py
