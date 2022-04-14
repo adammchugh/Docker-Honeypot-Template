@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    container_name: honeypot-frontend
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000" # Keep the 127.0.0.1:5000: segment to maintain the Action Workflow
