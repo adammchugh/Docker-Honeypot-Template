@@ -1,8 +1,8 @@
 FROM python:3.7-alpine
-WORKDIR /code
+WORKDIR /honeypot
 
 COPY . .
 RUN pip install -r requirements.txt
 
 ENTRYPOINT ["bash"]
-CMD ["-c", "/code/start_honeypot.sh"]
+CMD ["-c", "/honeypot/start_honeypot.sh"]
